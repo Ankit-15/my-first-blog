@@ -7,14 +7,15 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link href="//fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet" type="text/css">
         <link href="//fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" type="text/css">
-        <link href="//fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet" type="text/css"></head>
     <body>
-      <div class="page-header">
+
+      <div class="page-header" >
         {% if user.is_authenticated %}
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
            {% endif %}
    <h1><a href="/">My World of Thoughts</a></h1>
-</div>
+</div><div class="op">
 <div class="content container">
    <div class="row">
        <div class="col-md-8">
@@ -22,6 +23,6 @@
        {% endblock %}
        </div>
    </div>
-</div>
+</div></div>
     </body>
 </html>
